@@ -1,0 +1,12 @@
+15:55:42 **** Incremental Build of configuration Debug for project BootLoader ****
+make -j4 all 
+arm-none-eabi-size   BootLoader.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19972	    136	   1968	  22076	   563c	BootLoader.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objcopy -O ihex BootLoader.elf BootLoader.hex
+ 
+
+15:55:43 Build Finished. 0 errors, 0 warnings. (took 1s.17ms)
+

@@ -1,0 +1,71 @@
+15:55:28 **** Incremental Build of configuration Debug for project BootLoader ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F303xE -DDEBUG -c -I../Inc -IC:/Users/nmazzilli24/STM32Cube/Repository/STM32Cube_FW_F3_V1.10.0/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -IC:/Users/nmazzilli24/STM32Cube/Repository/STM32Cube_FW_F3_V1.10.0/Drivers/STM32F3xx_HAL_Driver/Inc -IC:/Users/nmazzilli24/STM32Cube/Repository/STM32Cube_FW_F3_V1.10.0/Drivers/CMSIS/Include -IC:/Users/nmazzilli24/STM32Cube/Repository/STM32Cube_FW_F3_V1.10.0/Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'bootloader_handle_getver_cmd':
+../Src/main.c:450:12: warning: unused variable 'ret_crc_u8' [-Wunused-variable]
+    uint8_t ret_crc_u8 = bootloader_verify_crc(&bl_rx_buffer[0],command_packet_len-4,host_crc_not_swapped);
+            ^~~~~~~~~~
+../Src/main.c: In function 'bootloader_handle_mem_write_cmd':
+../Src/main.c:729:10: warning: variable 'chksum' set but not used [-Wunused-but-set-variable]
+  uint8_t chksum =0, len=0;
+          ^~~~~~
+../Src/main.c:727:10: warning: unused variable 'addr_valid' [-Wunused-variable]
+  uint8_t addr_valid = ADDR_VALID;
+          ^~~~~~~~~~
+../Src/main.c: In function 'bootloader_verify_crc':
+../Src/main.c:979:18: warning: unused variable 'i_data_test' [-Wunused-variable]
+         uint32_t i_data_test = (uint32_t)pData[i];
+                  ^~~~~~~~~~~
+../Src/main.c: In function 'bootloader_verify_crc_swapped':
+../Src/main.c:1003:18: warning: unused variable 'i_data_test' [-Wunused-variable]
+         uint32_t i_data_test = (uint32_t)pData[i-1];
+                  ^~~~~~~~~~~
+../Src/main.c: In function 'bootloader_uart_read_data':
+../Src/main.c:1023:20: warning: variable 'uart_t' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef uart_t;
+                    ^~~~~~
+../Src/main.c: In function 'configure_flash_sector_rw_protection':
+../Src/main.c:1619:14: warning: variable 'page_value' set but not used [-Wunused-but-set-variable]
+     uint32_t page_value = 0;
+              ^~~~~~~~~~
+../Src/main.c:1618:23: warning: variable 'wrp_return' set but not used [-Wunused-but-set-variable]
+     HAL_StatusTypeDef wrp_return = HAL_OK;
+                       ^~~~~~~~~~
+../Src/main.c:1617:23: warning: variable 'rdp_return' set but not used [-Wunused-but-set-variable]
+     HAL_StatusTypeDef rdp_return = HAL_OK;
+                       ^~~~~~~~~~
+../Src/main.c:1613:24: warning: unused variable 'pFLASH_CR' [-Wunused-variable]
+     volatile uint32_t *pFLASH_CR = (uint32_t*) 0x40022010;
+                        ^~~~~~~~~
+At top level:
+../Src/main.c:185:26: warning: 'uart_status_t' defined but not used [-Wunused-variable]
+ static HAL_StatusTypeDef uart_status_t;
+                          ^~~~~~~~~~~~~
+../Src/main.c:184:31: warning: 'button_state_t' defined but not used [-Wunused-variable]
+ static Button_state_machine_t button_state_t = NOT_BLINKING;
+                               ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "BootLoader.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\nmazzilli24\Documents\STM_BootLoader\Dev\BootLoader\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BootLoader.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BootLoader.elf
+ 
+arm-none-eabi-size   BootLoader.elf 
+arm-none-eabi-objdump -h -S  BootLoader.elf  > "BootLoader.list"
+arm-none-eabi-objcopy  -O binary  BootLoader.elf  "BootLoader.bin"
+   text	   data	    bss	    dec	    hex	filename
+  19972	    136	   1968	  22076	   563c	BootLoader.elf
+Finished building: default.size.stdout
+ 
+Finished building: BootLoader.bin
+ 
+Finished building: BootLoader.list
+ 
+arm-none-eabi-objcopy -O ihex BootLoader.elf BootLoader.hex
+ 
+15:55:42 **** Incremental Build of configuration Debug for project BootLoader ****
+make -j4 all 
+arm-none-eabi-size   BootLoader.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19972	    136	   1968	  22076	   563c	BootLoader.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objcopy -O ihex BootLoader.elf BootLoader.hex
+ 

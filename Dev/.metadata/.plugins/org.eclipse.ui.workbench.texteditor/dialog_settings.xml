@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="configure_flash_sector_rw_protection"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="configure_flash_sector_rw_protection"/>
+			<item value="read_OB_rw_protection_status"/>
+			<item value="OB_BASE"/>
+			<item value="OB_TypeDef"/>
+			<item value="hendle_mem_wr"/>
+			<item value="IS_FLASH_PROGRAM_ADDRESS"/>
+			<item value="FLASH_Type_Program"/>
+			<item value="bootloader_handle_go_cmd"/>
+			<item value="FLASH_BANK1_END"/>
+			<item value="FLASH_BASE"/>
+			<item value="FLASHEx_Type_Erase"/>
+			<item value="sector_num"/>
+			<item value="bootloader_send_ack"/>
+			<item value="C_UART"/>
+			<item value="DEFAULT_CRC_INITVALUE"/>
+		</list>
+		<list key="replacehistory">
+			<item value="D_UART"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1324"/>
+		<item key="DIALOG_Y_ORIGIN" value="502"/>
+		<item key="DIALOG_WIDTH" value="284"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI"/>
+	</section>
+</section>

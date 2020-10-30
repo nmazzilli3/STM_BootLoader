@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Application/BootLoader.ioc&apos; to &apos;Application.ioc&apos;" description="Rename resource &apos;BootLoader.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="BootLoader.ioc" name="Application.ioc" stamp="1603500134550" updateReferences="true"/>
+</session>

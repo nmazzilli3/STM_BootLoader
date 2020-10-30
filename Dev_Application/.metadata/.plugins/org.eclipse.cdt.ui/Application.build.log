@@ -1,0 +1,12 @@
+17:42:15 **** Incremental Build of configuration Debug for project Application ****
+make -j4 all 
+arm-none-eabi-size   Application.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14448	    152	   1736	  16336	   3fd0	Application.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objcopy -O ihex Application.elf Application.hex
+ 
+
+17:42:16 Build Finished. 0 errors, 0 warnings. (took 1s.195ms)
+
