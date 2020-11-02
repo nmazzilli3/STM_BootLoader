@@ -19,3 +19,7 @@
 2020-10-30 16:06:49,656 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 2020-10-30 16:06:49.651:INFO:oejs.session:Start Help Server: No SessionScavenger set, using defaults
 2020-10-30 16:06:49,660 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 2020-10-30 16:06:49.658:INFO:oejs.session:Start Help Server: node0 Scavenging every 600000ms
 2020-10-30 16:06:49,730 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 2020-10-30 16:06:49.726:INFO:oejs.session:Start Help Server: node0 Scavenging every 660000ms
+2020-11-02 10:11:34,172 [INFO] Activator:178 - 
+
+
+2020-11-02 10:11:34,172 [INFO] Activator:179 - !SESSION log4j initialized
